@@ -1,0 +1,8 @@
+name: push event triggered
+on: [push]
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print build number
+        run: echo ${{github.run_number}} build
